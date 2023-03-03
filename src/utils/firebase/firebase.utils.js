@@ -8,6 +8,7 @@ import {
   signInWithEmailAndPassword,
 } from 'firebase/auth';
 import { getFirestore, doc, getDoc, setDoc } from 'firebase/firestore';
+
 const firebaseConfig = {
     apiKey: "AIzaSyAFV4J_rnywHqpDxkXRLOtOR9LOl1H3vhg",
     authDomain: "clother-a9fb0.firebaseapp.com",
@@ -17,7 +18,7 @@ const firebaseConfig = {
     appId: "1:371220018203:web:33d5c3170bf96b7a63b4be"
 };
 
-const firebaseApp = initializeApp(firebaseConfig);
+initializeApp(firebaseConfig);
 
 const googleProvider = new GoogleAuthProvider();
 
