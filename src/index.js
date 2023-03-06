@@ -4,20 +4,20 @@ import './index.scss'
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter } from 'react-router-dom';
 import App from './App';
-import { UserProvider } from './context/user.context';
-import { ProductProvider } from './context/product.context';
-import { CartProvider } from './context/cart.context';
+import { UserProvider } from './contexts/user.context';
+import { ProductsProvider } from './contexts/products.context';
+import { CartProvider } from './contexts/cart.context';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <BrowserRouter>
       <UserProvider>
-        <ProductProvider>
+        <ProductsProvider>
           <CartProvider>
             <App />
           </CartProvider>
-        </ProductProvider>
+        </ProductsProvider>
       </UserProvider>
     </BrowserRouter>
   </React.StrictMode>
