@@ -1,4 +1,3 @@
-import { useContext } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 
 import { addItemToCart, removeItemToCart, clearItemFromCart } from '../../store/cart/cart.action';
