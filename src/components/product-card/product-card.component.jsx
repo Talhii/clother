@@ -1,4 +1,3 @@
-import { useContext } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { cartItemSelector } from '../../store/cart/cart.selector';
 import { addItemToCart } from '../../store/cart/cart.action';
@@ -14,7 +13,6 @@ import {
 
 const ProductCard = ({ product }) => {
   const { name, price, imageUrl } = product;
-  // const { addItemToCart } = useContext(CartContext);
   const dispatch = useDispatch();
 
   const cartItems = useSelector(cartItemSelector)
