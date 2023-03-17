@@ -7,14 +7,8 @@ export const categorySelector = (state) => {
 export const categorySelectorMap = createSelector(
     [categorySelector],
     (categories) =>{
-        return categories.categoriesMap
+        return categories.categories
     }
 )
 
-export const isLoadingCategorySelector = createSelector(
-    [categorySelector],
-    (categories) => {
-        return categories.isLoading
-    }
-)
 

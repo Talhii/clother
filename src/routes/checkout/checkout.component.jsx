@@ -13,6 +13,7 @@ const Checkout = () => {
   const cartItems = useSelector(cartItemSelector);
   const cartTotal = useSelector(cartTotalSelector);
 
+  
   return (
     <CheckoutContainer>
       <CheckoutHeader>
